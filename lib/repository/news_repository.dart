@@ -7,7 +7,7 @@ import 'package:newsapp/models/news_channel_headlines_model.dart';
 
 class NewsRepository{
   Future<NewsChannelsHeadlinesModel> fetchNewChannelHeadlinesApi(String channelName)async{
-    String url = 'https://newsapi.org/v2/top-headlines?sources=${channelName}&apiKey=daedc280602d48c58d7056f5b1c7e057' ;
+    String url = 'https://newsapi.org/v2/top-headlines?sources=${channelName}&apiKey=<yourkey>' ;
     print(url);
     final response = await http.get(Uri.parse(url));
     if (kDebugMode) {
@@ -21,7 +21,7 @@ class NewsRepository{
   }
 
   Future<CategoriesNewsModel> fetchCategoriesNewsApi(String category)async{
-    String url = 'https://newsapi.org/v2/everything?q=${category}&apiKey=daedc280602d48c58d7056f5b1c7e057' ;
+    String url = 'https://newsapi.org/v2/everything?q=${category}&apiKey=<yourkey>' ;
     print(url);
     final response = await http.get(Uri.parse(url));
     if (kDebugMode) {
