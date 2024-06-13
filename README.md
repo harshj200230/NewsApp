@@ -38,7 +38,5 @@ Video demonstration link : https://www.linkedin.com/posts/harsh-joshi-322761128_
     
 ## Deployment
 
-Its ready to go :)
-
-just clone the repository
-
+1. Clone the repository
+2. add your news API key in the code
